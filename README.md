@@ -1,13 +1,11 @@
-# Practical Convolutional Neural Networks
-This is the code repository for [Practical Convolutional Neural Networks](https://www.packtpub.com/big-data-and-business-intelligence/practical-convolutional-neural-networks?utm_source=github&utm_medium=repository&utm_campaign=9781788392303), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
+# Deep Learning Quick Reference
+This is the code repository for [Deep Learning Quick Reference](https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-quick-reference?utm_source=github&utm_medium=repository&utm_campaign=9781788837996), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
-Convolutional Neural Network (CNN) is revolutionizing several application domains such as visual recognition systems, self-driving cars, medical discoveries, innovative eCommerce and more.You will learn to create innovative solutions around image and video analytics to solve complex machine learning and computer vision related problems and implement real-life CNN models.
+Deep learning has become an essential necessity to enter the world of artificial intelligence. With this book deep learning techniques will become more accessible, practical, and relevant to practicing data scientists. It moves deep learning from academia to the real world through practical examples.
 
-This book starts with an overview of deep neural networkswith the example of image classification and walks you through building your first CNN for human face detector. We will learn to use concepts like transfer learning with CNN, and Auto-Encoders to build very powerful models, even when not much of supervised training data of labeled images is available.
+You will learn how Tensor Board is used to monitor the training of deep neural networks and solve binary classification problems using deep learning. Readers will then learn to optimize hyperparameters in their deep learning models. The book then takes the readers through the practical implementation of training CNN's, RNN's, and LSTM's with word embeddings and seq2seq models from scratch. Later the book explores advanced topics such as Deep Q Network to solve an autonomous agent problem and how to use two adversarial networks to generate artificial images that appear real. For implementation purposes, we look at popular Python-based deep learning frameworks such as Keras and Tensorflow, Each chapter provides best practices and safe choices to help readers make the right decision while training deep neural networks.
 
-Later we build upon the learning achieved to build advanced vision related algorithms for object detection, instance segmentation, generative adversarial networks, image captioning, attention mechanisms for vision, and recurrent models for vision.
-
-By the end of this book, you should be ready to implement advanced, effective and efficient CNN models at your professional project or personal initiatives by working on complex image and video datasets.
+By the end of this book, you will be able to solve real-world problems quickly with deep neural networks.
 
 ## Instructions and Navigation
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
@@ -16,22 +14,31 @@ All of the code is organized into folders. Each folder starts with a number foll
 
 The code will look like the following:
 ```
-import numpy as np
-import tensorflow as tf
-import matplotlib.patches as mpatches
-import matplotlib.pyplot as plt
-plt.rcParams['figure.figsize'] = (10, 6)
+a = tf.constant([1.0,</span> 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3],
+name='a')
+b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
+c = tf.matmul(a, b)
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+print(sess.run(c))
 ```
 
-Inform the reader of the things that they need to know before they start, and spell out what knowledge you are assuming.
-Any additional installation instructions and information they need for getting set up.
+1. I assume that you're already experienced with more traditional data science and
+predictive modeling techniques such as Linear/Logistic Regression and Random
+Forest. If this is your first experience with machine learning, this may be a little
+difficult for you.
+2. I also assume that you have at least some experience in programming with
+Python, or at least another programming language such as Java or C++.
+3. Deep learning is computationally intensive, and some of the models we build
+here require an NVIDIA GPU to run in a reasonable amount of time. If you don't
+own a fast GPU, you may wish to use a GPU-based cloud instance on either
+Amazon Web Services or Google Cloud Platform.
 
 ## Related Products
-* [Practical Deep Reinforcement Learning](https://www.packtpub.com/big-data-and-business-intelligence/practical-deep-reinforcement-learning?utm_source=github&utm_medium=repository&utm_campaign=9781788834247)
+* [Artificial Intelligence and Deep Learning for Decision Makers](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-and-deep-learning-decision-makers?utm_source=github&utm_medium=repository&utm_campaign=9781788294652)
 
-* [Neural Network Programming with Python](https://www.packtpub.com/big-data-and-business-intelligence/neural-network-programming-python?utm_source=github&utm_medium=repository&utm_campaign=9781784398217)
+* [Apache Spark Deep Learning Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/apache-spark-deep-learning-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781788474221)
 
-* [Practical Artificial Intelligence Projects](https://www.packtpub.com/big-data-and-business-intelligence/practical-artificial-intelligence-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788830027)
+* [Keras Deep Learning Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/keras-deep-learning-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781788621755)
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
